@@ -34,10 +34,17 @@
     <iframe src="https://12grassiscool34.github.io/games/games" title="Grass Games"></iframe>
     <div class="bottom-bar" id="bottomBar"></div>
     <script>
-        const messages = ["Unblocked games for school.","Have schoolwork to do? Just play games.","School is boring! Play games instead.","Stay entertained at school by playing games!"];
+        const messages = [
+            "Unblocked games for school.",
+            "Have schoolwork to do? Just play games.",
+            "School is boring! Play games instead.",
+            "Stay entertained at school by playing games!",
+            `If Grass Games ever gets blocked, you can use <a href="https://12treesarecool34.github.io/games" style="color: white;">12treesarecool34</a>.`
+        ];
+
         function changeMessage() {
             const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-            document.getElementById('bottomBar').innerText = randomMessage;
+            document.getElementById('bottomBar').innerHTML = randomMessage;
         }
 
         document.addEventListener('DOMContentLoaded', () => {
